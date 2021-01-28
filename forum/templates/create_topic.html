@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>
+            create topic
+        </title>
+    </head>    
+
+    <body>
+        <a href = "/">
+            home
+        </a><br>
+
+        <form method = "POST" action = "">
+            {{ form.hidden_tag() }}
+            {{ form.header }}
+            {{ form.content }}
+            {{ form.submit }} 
+        </form>
+    </body>
+</html>

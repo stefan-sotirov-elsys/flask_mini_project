@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>
+            {{ topic.header }}
+        </title>
+    </head>
+
+    <body>
+        <a href = "/">
+            home
+        </a><br>
+
+        {{ topic.date }}
+        <br>
+        {{ topic.header }}
+        <br>
+        {{ topic.content }}
+        <br>
+
+        {% if topic.author == current_user %}
+            <a href = "{{ url_for('update_topic', topic_id = topic.id) }}">update</a>
+            <br>
+            <a href = "{{ url_for('delete_topic', topic_id = topic.id) }}">delete</a>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>
+            login page
+        </title>
+    </head>
+
+    <body>
+        <form method = "POST" action = "">
+            {{ form.hidden_tag() }}
+            {{ form.username }}
+            {{ form.password }}
+            {{ form.submit }} 
+        </form>
+
+        <a href = "/">
+            home
+        </a><br>
+        <a href = "/register">
+            register
+        </a><br>
+    </body>
+</html>
